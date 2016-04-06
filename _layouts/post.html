@@ -1,0 +1,66 @@
+---
+layout: page
+---
+<div class="sonBanner wa">
+	<div class="banner_07_05">
+		<div class="width m"></div>
+	</div>
+</div>
+<div class="entry conts2" style="margin-bottom:60px;padding:0px;background-color:rgb(232,232,232);">
+    <div class="entbg">
+        <div class="PoContent">
+            <div class="time-share">
+                <div class="time">{{ page.date|date:"%Y年%m月%d日" }}</div>
+                <div class="share-to-weibo">
+                    <a href="javascript:void(0)" onclick="window.open('http://service.weibo.com/share/share.php?appkey=&amp;ralateUid=&amp;title={{ page.title }} - &amp;url={{ site.url }}{{ page.url }}', null, 'width=615,height=505,toolbar=0,status=0')" class="sina-weibo" title="分享到新浪微薄"></a>
+                    <a href="javascript:void(0)" onclick="window.open('http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;appkey=&amp;title={{ page.title }} - &amp;url={{ site.url }}{{ page.url }}', null, 'width=700,height=680,toolbar=0,status=0')" class="tencent-weibo" title="分享到腾讯微薄"></a>
+                </div>
+            </div>
+            {{ content }}
+        </div>
+        <div class="Pofooter">
+            <div class="meta">
+                {% if page.previous.url %}
+                <a href="{{ page.previous.url }}" class="Link-color float-l" title="上一篇: {{ page.previous.title }}">&laquo; {{ page.previous.title }}</a>
+                {% endif %}
+                {% if page.next.url %}
+                <a href="{{ page.next.url }}" class="Link-color float-r" title="下一篇: {{ page.next.title }}">{{ page.next.title }} &raquo;</a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="ds-thread" data-thread-key="{{ post.url }}" data-title="{{ post.title }}" data-url="{{ post.url }}"></div>
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"atomteams"};
+            (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+            || document.getElementsByTagName('body')[0]).appendChild(ds);
+            })();
+        </script>
+    </div>
+    <div class="Sidebar">
+        <div class="titl1">
+            <span>原子团队诚邀您的加入</span>
+        </div>
+        <div style="clear:both; background:url(../images/bx1.png) repeat-x;height:5px;width:246px; margin:0 auto;margin-top:5px;">&nbsp;</div>
+        <div class="Stock">
+            <div style="font-size:16px;font-weight:bold;margin-bottom:10px;color:#d32;">温馨提示：</div>
+            <p style="font-size:13px;line-height:25px;text-indent:25px;margin:0px;color:#555;">
+                互联网是个鱼龙混杂的地方，层出不穷的骗局让人防不胜防。原子团队提醒各商家务必多加小心，切勿上了骗子的当。
+            </p>
+            <p style="font-size:13px;line-height:25px;text-indent:25px;margin:10px 0 0 0;color:#555;">
+                到目前为止已经有很多商家上当受骗，他们等待商家回款后却不放款给第三方，导致第三方申请退款，最终商家遭受严重损失。
+            </p>
+            <ul class="lianxi1">
+                <li>Q Q：175613029</li>
+                <li>电话：15988831873</li>
+                <li>邮箱：175613029@qq.com</li>
+            </ul>
+        </div>
+        <div style="clear:both; background:url(../images/bx1.png) repeat-x;height:5px;width:246px; margin:0 auto;margin-top:10px;">&nbsp;</div>
+    </div>
+</div>
+<script type="text/javascript" src="/javascript/menuIndex.js"></script>

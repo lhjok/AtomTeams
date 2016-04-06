@@ -1,0 +1,10 @@
+exclude:       ['public', 'bin', 'vendor', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md']
+markdown:      rdiscount
+highlighter:   pygments
+paginate:      1000
+gems:          [jekyll-paginate]
+destination:   ./public
+permalink:     /:title
+
+title:         原子团队 | 全国最专业爆款研究工作室
+url:           http://www.atomteams.com/
